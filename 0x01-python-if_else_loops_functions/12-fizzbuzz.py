@@ -8,4 +8,4 @@ def fizzbuzz():
             tab = "F"
         elif i % 5 == 0:
             tab = "B"
-        print("{}" .format(i if tab == "" else tab), end = " ")
+    print("{}" .format(i if tab == "" else tab), end=" ")
