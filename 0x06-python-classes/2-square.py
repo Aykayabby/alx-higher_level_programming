@@ -8,7 +8,7 @@ class Square:
     Attribute:
         size(int): size"""
 
-    def __init__(self, size):
+    def __init__(self, size=0):
         """init method
 
         argument:
