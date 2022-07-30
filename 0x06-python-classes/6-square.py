@@ -8,7 +8,7 @@ class Square:
     Attribute:
         size(int): size"""
 
-    def __init__(self, size=0, position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         """init method
 
         argument:
@@ -49,7 +49,10 @@ class Square:
 
     def my_print(self):
         """Prints a pattern"""
-        for i in range(self.__size):
-            print("#" * self.__size)
         if self.__size == 0:
             print("")
+        else:
+            for i in range(self.__position[1]):
+                print("")
+            for i in range(self.__size):
+                print("" * self.position + "#" * self.__size)
