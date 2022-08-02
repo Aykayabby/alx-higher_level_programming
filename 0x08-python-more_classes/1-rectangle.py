@@ -7,23 +7,31 @@ A module that defines a rectangle
 
 
 class Rectangle:
-     """A rectangle class"""
+     """
+     A rectangle class
+     """
 
     def __init__(self, width=0, height=0):
-        """init method
+        """
+        init method
 
+        
         args:
             width: The width in int
-            height: The height in int"""
+            height: The height in int
+            """
 
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """Returns width of the property
+        """
+        Returns width of the property
 
-        raises error when width is not and integer or is less than 0"""
+        
+        raises error when width is not and integer or is less than 0
+        """
         return self.__width
 
     @width.setter
@@ -36,9 +44,12 @@ class Rectangle:
 
     @property
     def height(self):
-        """Returns height of the property
+        """
+        Returns height of the property
 
-        raises error when the height is not an integer or is less than 0"""
+        
+        raises error when the height is not an integer or is less than 0
+        """
         return self.__height
 
     @height.setter
@@ -48,3 +59,4 @@ class Rectangle:
         elif value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
