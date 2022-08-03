@@ -19,7 +19,7 @@ class BaseGeometry:
                 TypeError: if value is not an integer
                 ValueError: if value is not greater than zero."""
         if type(value) != int:
-            raise TypeError{"{} must be an integer".format(name))
+            raise TypeError("{} must be an integer".format(name))
         elif value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
 
